@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1197845D25F91A2A00DB4EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */; };
+		1197846625F91A2C00DB4EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1197846525F91A2C00DB4EC7 /* Assets.xcassets */; };
+		1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */; };
+		119784E125F95FB000DB4EC7 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 119784E025F95FB000DB4EC7 /* Fakery */; };
+		3044D77C2982727600F81550 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7522982727500F81550 /* Helpers.swift */; };
+		3044D77D2982727600F81550 /* ExpressPayTransactionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7532982727500F81550 /* ExpressPayTransactionStorage.swift */; };
+		3044D77F2982727600F81550 /* ExpressPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7572982727600F81550 /* ExpressPayButton.swift */; };
+		3044D7822982727600F81550 /* ExpressPayRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D75A2982727600F81550 /* ExpressPayRadioButton.swift */; };
+		3044D7832982727600F81550 /* ApplePayinitiater.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3044D75D2982727600F81550 /* ApplePayinitiater.xib */; };
+		3044D7842982727600F81550 /* ApplePayInitiater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D75E2982727600F81550 /* ApplePayInitiater.swift */; };
+		3044D7852982727600F81550 /* ExpressPaySaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7602982727600F81550 /* ExpressPaySaleVC.swift */; };
+		3044D7862982727600F81550 /* ExpressPaySale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D7612982727600F81550 /* ExpressPaySale.storyboard */; };
+		3044D7872982727600F81550 /* ExpressPayCaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7632982727600F81550 /* ExpressPayCaptureVC.swift */; };
+		3044D7882982727600F81550 /* ExpressPayCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D7642982727600F81550 /* ExpressPayCapture.storyboard */; };
+		3044D7892982727600F81550 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7652982727600F81550 /* BaseViewController.swift */; };
+		3044D78A2982727600F81550 /* ExpressPayCreditvoid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D7672982727600F81550 /* ExpressPayCreditvoid.storyboard */; };
+		3044D78B2982727600F81550 /* ExpressPayCreditvoidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7682982727600F81550 /* ExpressPayCreditvoidVC.swift */; };
+		3044D78C2982727600F81550 /* ExpressPayGetTransStatus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D76A2982727600F81550 /* ExpressPayGetTransStatus.storyboard */; };
+		3044D78D2982727600F81550 /* ExpressPayGetTransStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D76B2982727600F81550 /* ExpressPayGetTransStatusVC.swift */; };
+		3044D78E2982727600F81550 /* ExpressPayChooserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D76C2982727600F81550 /* ExpressPayChooserVC.swift */; };
+		3044D78F2982727600F81550 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D76D2982727600F81550 /* TransactionViewController.swift */; };
+		3044D7902982727600F81550 /* ExpressPayRecurringSale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D76F2982727600F81550 /* ExpressPayRecurringSale.storyboard */; };
+		3044D7912982727600F81550 /* ExpressPayRecurringSaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7702982727600F81550 /* ExpressPayRecurringSaleVC.swift */; };
+		3044D7922982727600F81550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D7722982727600F81550 /* Main.storyboard */; };
+		3044D7932982727600F81550 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7742982727600F81550 /* MainVC.swift */; };
+		3044D7942982727600F81550 /* ApplePayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7762982727600F81550 /* ApplePayVC.swift */; };
+		3044D7952982727600F81550 /* ApplePay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D7772982727600F81550 /* ApplePay.storyboard */; };
+		3044D7962982727600F81550 /* ExpressPayGetTransDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7792982727600F81550 /* ExpressPayGetTransDetailsVC.swift */; };
+		3044D7972982727600F81550 /* ExpressPayGetTransDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3044D77A2982727600F81550 /* ExpressPayGetTransDetails.storyboard */; };
+		3044D7982982727600F81550 /* ExpressPayRedirect3dsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D77B2982727600F81550 /* ExpressPayRedirect3dsVC.swift */; };
+		3077EA392975324600608D44 /* ExpressPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3077EA37297531E500608D44 /* ExpressPaySDK.framework */; };
+		3077EA3A2975324600608D44 /* ExpressPaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3077EA37297531E500608D44 /* ExpressPaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1197847525F91A4000DB4EC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3077EA3A2975324600608D44 /* ExpressPaySDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1197845A25F91A2A00DB4EC7 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1197846525F91A2C00DB4EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1197846825F91A2C00DB4EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1197846A25F91A2C00DB4EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3044D74C2982708B00F81550 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
+		3044D7522982727500F81550 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		3044D7532982727500F81550 /* ExpressPayTransactionStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayTransactionStorage.swift; sourceTree = "<group>"; };
+		3044D7572982727600F81550 /* ExpressPayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayButton.swift; sourceTree = "<group>"; };
+		3044D75A2982727600F81550 /* ExpressPayRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayRadioButton.swift; sourceTree = "<group>"; };
+		3044D75D2982727600F81550 /* ApplePayinitiater.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApplePayinitiater.xib; sourceTree = "<group>"; };
+		3044D75E2982727600F81550 /* ApplePayInitiater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayInitiater.swift; sourceTree = "<group>"; };
+		3044D7602982727600F81550 /* ExpressPaySaleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPaySaleVC.swift; sourceTree = "<group>"; };
+		3044D7612982727600F81550 /* ExpressPaySale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPaySale.storyboard; sourceTree = "<group>"; };
+		3044D7632982727600F81550 /* ExpressPayCaptureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayCaptureVC.swift; sourceTree = "<group>"; };
+		3044D7642982727600F81550 /* ExpressPayCapture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayCapture.storyboard; sourceTree = "<group>"; };
+		3044D7652982727600F81550 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3044D7672982727600F81550 /* ExpressPayCreditvoid.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayCreditvoid.storyboard; sourceTree = "<group>"; };
+		3044D7682982727600F81550 /* ExpressPayCreditvoidVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayCreditvoidVC.swift; sourceTree = "<group>"; };
+		3044D76A2982727600F81550 /* ExpressPayGetTransStatus.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayGetTransStatus.storyboard; sourceTree = "<group>"; };
+		3044D76B2982727600F81550 /* ExpressPayGetTransStatusVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayGetTransStatusVC.swift; sourceTree = "<group>"; };
+		3044D76C2982727600F81550 /* ExpressPayChooserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayChooserVC.swift; sourceTree = "<group>"; };
+		3044D76D2982727600F81550 /* TransactionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		3044D76F2982727600F81550 /* ExpressPayRecurringSale.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayRecurringSale.storyboard; sourceTree = "<group>"; };
+		3044D7702982727600F81550 /* ExpressPayRecurringSaleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayRecurringSaleVC.swift; sourceTree = "<group>"; };
+		3044D7732982727600F81550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3044D7742982727600F81550 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		3044D7762982727600F81550 /* ApplePayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayVC.swift; sourceTree = "<group>"; };
+		3044D7772982727600F81550 /* ApplePay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ApplePay.storyboard; sourceTree = "<group>"; };
+		3044D7792982727600F81550 /* ExpressPayGetTransDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayGetTransDetailsVC.swift; sourceTree = "<group>"; };
+		3044D77A2982727600F81550 /* ExpressPayGetTransDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayGetTransDetails.storyboard; sourceTree = "<group>"; };
+		3044D77B2982727600F81550 /* ExpressPayRedirect3dsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayRedirect3dsVC.swift; sourceTree = "<group>"; };
+		3077EA37297531E500608D44 /* ExpressPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExpressPaySDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1197845725F91A2A00DB4EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119784E125F95FB000DB4EC7 /* Fakery in Frameworks */,
+				3077EA392975324600608D44 /* ExpressPaySDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1197845B25F91A2A00DB4EC7 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7512982727500F81550 /* App */,
+				3044D7542982727600F81550 /* UI */,
+				3044D74C2982708B00F81550 /* Sample.entitlements */,
+				1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */,
+				1197846525F91A2C00DB4EC7 /* Assets.xcassets */,
+				1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */,
+				1197846A25F91A2C00DB4EC7 /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		1197847025F91A3F00DB4EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3077EA37297531E500608D44 /* ExpressPaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11C1231A25D4734A002B42B3 = {
+			isa = PBXGroup;
+			children = (
+				1197845B25F91A2A00DB4EC7 /* Sample */,
+				11C1232525D4734A002B42B3 /* Products */,
+				1197847025F91A3F00DB4EC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11C1232525D4734A002B42B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1197845A25F91A2A00DB4EC7 /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3044D7512982727500F81550 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7522982727500F81550 /* Helpers.swift */,
+				3044D7532982727500F81550 /* ExpressPayTransactionStorage.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3044D7542982727600F81550 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7562982727600F81550 /* View */,
+				3044D75B2982727600F81550 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3044D7562982727600F81550 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7572982727600F81550 /* ExpressPayButton.swift */,
+				3044D75A2982727600F81550 /* ExpressPayRadioButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3044D75B2982727600F81550 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3044D75C2982727600F81550 /* ApplePayinitiater */,
+				3044D75F2982727600F81550 /* Sale */,
+				3044D7622982727600F81550 /* Capture */,
+				3044D7652982727600F81550 /* BaseViewController.swift */,
+				3044D7662982727600F81550 /* CreditVoid */,
+				3044D7692982727600F81550 /* GetTransStatus */,
+				3044D76C2982727600F81550 /* ExpressPayChooserVC.swift */,
+				3044D76D2982727600F81550 /* TransactionViewController.swift */,
+				3044D76E2982727600F81550 /* RecurringSale */,
+				3044D7712982727600F81550 /* Main */,
+				3044D7752982727600F81550 /* ApplePay */,
+				3044D7782982727600F81550 /* GetTransDetails */,
+				3044D77B2982727600F81550 /* ExpressPayRedirect3dsVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3044D75C2982727600F81550 /* ApplePayinitiater */ = {
+			isa = PBXGroup;
+			children = (
+				3044D75D2982727600F81550 /* ApplePayinitiater.xib */,
+				3044D75E2982727600F81550 /* ApplePayInitiater.swift */,
+			);
+			path = ApplePayinitiater;
+			sourceTree = "<group>";
+		};
+		3044D75F2982727600F81550 /* Sale */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7602982727600F81550 /* ExpressPaySaleVC.swift */,
+				3044D7612982727600F81550 /* ExpressPaySale.storyboard */,
+			);
+			path = Sale;
+			sourceTree = "<group>";
+		};
+		3044D7622982727600F81550 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7632982727600F81550 /* ExpressPayCaptureVC.swift */,
+				3044D7642982727600F81550 /* ExpressPayCapture.storyboard */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		3044D7662982727600F81550 /* CreditVoid */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7672982727600F81550 /* ExpressPayCreditvoid.storyboard */,
+				3044D7682982727600F81550 /* ExpressPayCreditvoidVC.swift */,
+			);
+			path = CreditVoid;
+			sourceTree = "<group>";
+		};
+		3044D7692982727600F81550 /* GetTransStatus */ = {
+			isa = PBXGroup;
+			children = (
+				3044D76A2982727600F81550 /* ExpressPayGetTransStatus.storyboard */,
+				3044D76B2982727600F81550 /* ExpressPayGetTransStatusVC.swift */,
+			);
+			path = GetTransStatus;
+			sourceTree = "<group>";
+		};
+		3044D76E2982727600F81550 /* RecurringSale */ = {
+			isa = PBXGroup;
+			children = (
+				3044D76F2982727600F81550 /* ExpressPayRecurringSale.storyboard */,
+				3044D7702982727600F81550 /* ExpressPayRecurringSaleVC.swift */,
+			);
+			path = RecurringSale;
+			sourceTree = "<group>";
+		};
+		3044D7712982727600F81550 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7722982727600F81550 /* Main.storyboard */,
+				3044D7742982727600F81550 /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3044D7752982727600F81550 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7762982727600F81550 /* ApplePayVC.swift */,
+				3044D7772982727600F81550 /* ApplePay.storyboard */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		3044D7782982727600F81550 /* GetTransDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3044D7792982727600F81550 /* ExpressPayGetTransDetailsVC.swift */,
+				3044D77A2982727600F81550 /* ExpressPayGetTransDetails.storyboard */,
+			);
+			path = GetTransDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1197845925F91A2A00DB4EC7 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1197846D25F91A2C00DB4EC7 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				1197845625F91A2A00DB4EC7 /* Sources */,
+				1197845725F91A2A00DB4EC7 /* Frameworks */,
+				1197845825F91A2A00DB4EC7 /* Resources */,
+				1197847525F91A4000DB4EC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			packageProductDependencies = (
+				119784E025F95FB000DB4EC7 /* Fakery */,
+			);
+			productName = Sample;
+			productReference = 1197845A25F91A2A00DB4EC7 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C1231B25D4734A002B42B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1197845925F91A2A00DB4EC7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 11C1231E25D4734A002B42B3 /* Build configuration list for PBXProject "ExpressPaySDKSamples" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11C1231A25D4734A002B42B3;
+			packageReferences = (
+				119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
+			productRefGroup = 11C1232525D4734A002B42B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1197845925F91A2A00DB4EC7 /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1197845825F91A2A00DB4EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3044D7972982727600F81550 /* ExpressPayGetTransDetails.storyboard in Resources */,
+				3044D7952982727600F81550 /* ApplePay.storyboard in Resources */,
+				3044D7882982727600F81550 /* ExpressPayCapture.storyboard in Resources */,
+				3044D78C2982727600F81550 /* ExpressPayGetTransStatus.storyboard in Resources */,
+				3044D7832982727600F81550 /* ApplePayinitiater.xib in Resources */,
+				3044D7862982727600F81550 /* ExpressPaySale.storyboard in Resources */,
+				3044D78A2982727600F81550 /* ExpressPayCreditvoid.storyboard in Resources */,
+				1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */,
+				3044D7922982727600F81550 /* Main.storyboard in Resources */,
+				1197846625F91A2C00DB4EC7 /* Assets.xcassets in Resources */,
+				3044D7902982727600F81550 /* ExpressPayRecurringSale.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1197845625F91A2A00DB4EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3044D77F2982727600F81550 /* ExpressPayButton.swift in Sources */,
+				3044D78B2982727600F81550 /* ExpressPayCreditvoidVC.swift in Sources */,
+				3044D77D2982727600F81550 /* ExpressPayTransactionStorage.swift in Sources */,
+				3044D7942982727600F81550 /* ApplePayVC.swift in Sources */,
+				3044D7962982727600F81550 /* ExpressPayGetTransDetailsVC.swift in Sources */,
+				1197845D25F91A2A00DB4EC7 /* AppDelegate.swift in Sources */,
+				3044D78D2982727600F81550 /* ExpressPayGetTransStatusVC.swift in Sources */,
+				3044D7912982727600F81550 /* ExpressPayRecurringSaleVC.swift in Sources */,
+				3044D7892982727600F81550 /* BaseViewController.swift in Sources */,
+				3044D7852982727600F81550 /* ExpressPaySaleVC.swift in Sources */,
+				3044D7822982727600F81550 /* ExpressPayRadioButton.swift in Sources */,
+				3044D7872982727600F81550 /* ExpressPayCaptureVC.swift in Sources */,
+				3044D78E2982727600F81550 /* ExpressPayChooserVC.swift in Sources */,
+				3044D7932982727600F81550 /* MainVC.swift in Sources */,
+				3044D7842982727600F81550 /* ApplePayInitiater.swift in Sources */,
+				3044D7982982727600F81550 /* ExpressPayRedirect3dsVC.swift in Sources */,
+				3044D77C2982727600F81550 /* Helpers.swift in Sources */,
+				3044D78F2982727600F81550 /* TransactionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1197846825F91A2C00DB4EC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3044D7722982727600F81550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3044D7732982727600F81550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1197846B25F91A2C00DB4EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7JEC8468;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.expresspay.sdk.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1197846C25F91A2C00DB4EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Sample/Sample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2H7JEC8468;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.expresspay.sdk.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11C1232A25D4734A002B42B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11C1232B25D4734A002B42B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1197846D25F91A2C00DB4EC7 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1197846B25F91A2C00DB4EC7 /* Debug */,
+				1197846C25F91A2C00DB4EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C1231E25D4734A002B42B3 /* Build configuration list for PBXProject "ExpressPaySDKSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C1232A25D4734A002B42B3 /* Debug */,
+				11C1232B25D4734A002B42B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		119784E025F95FB000DB4EC7 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11C1231B25D4734A002B42B3 /* Project object */;
+}

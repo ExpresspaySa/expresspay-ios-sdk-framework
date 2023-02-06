@@ -231,6 +231,9 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
+@import ObjectiveC;
+@import UIKit;
 @import WebKit;
 #endif
 
@@ -252,8 +255,84 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
-@class WKWebViewConfiguration;
+@class NSString;
 @class NSCoder;
+
+/// AKMaskField is UITextField subclass which allows enter data in the fixed quantity
+/// and in the certain format (credit cards, telephone numbers, dates, etc.).
+/// You only need setup mask and mask template visible for the user.
+/// Example of usage (programmatically):
+/// \code
+/// var field = AKMaskField()
+/// field.setMask("{dddd}-{DDDD}-{WaWa}-{aaaa}", withMaskTemplate: "ABCD-EFGH-IJKL-MNOP")
+///
+/// \endcodeFor more information click here <a href="https://github.com/artemkrachulov/AKMaskField">GitHub</a>
+SWIFT_CLASS("_TtC13ExpressPaySDK11AKMaskField")
+@interface AKMaskField : UITextField
+/// The string value that has blocks with pattern symbols that determine the certain format of input data. Wrap each mask block with proper bracket character.
+/// The predetermined formats (Mask symbol : Input format):
+/// <ul>
+///   <li>
+///     <code>d</code>	: Number, decimal number from 0 to 9
+///   </li>
+///   <li>
+///     <code>D</code>	: Any symbol, except decimal number
+///   </li>
+///   <li>
+///     <code>W</code>	: Not an alphabetic symbol
+///   </li>
+///   <li>
+///     <code>a</code>	: Alphabetic symbol, a-Z
+///   </li>
+///   <li>
+///     <code>.</code>	: Corresponds to any symbol (default)
+///   </li>
+/// </ul>
+/// Default value of this property is <code>nil</code>.
+@property (nonatomic, copy) IBInspectable NSString * _Nullable maskExpression;
+/// Set new text for the mask field. Equal to select all and paste actions.
+@property (nonatomic, copy) NSString * _Nullable text;
+@property (nonatomic, copy) NSString * _Nullable placeholder;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface AKMaskField (SWIFT_EXTENSION(ExpressPaySDK)) <UITextFieldDelegate>
+- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldEndEditing:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)textFieldShouldClear:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@class UIColor;
+@class UIImage;
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC13ExpressPaySDK18CreditCardFormView")
+@interface CreditCardFormView : UIView
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull defaultCardColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull cardHolderExpireDateTextColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull cardHolderExpireDateColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull backLineColor;
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable chipImage;
+@property (nonatomic, strong) IBInspectable UIImage * _Nullable cvcAmexImageName;
+@property (nonatomic, copy) IBInspectable NSString * _Nonnull cardHolderString;
+@property (nonatomic, copy) IBInspectable NSString * _Nonnull cardHolderPlaceholderString;
+@property (nonatomic, copy) IBInspectable NSString * _Nonnull expireDatePlaceholderText;
+@property (nonatomic, copy) IBInspectable NSString * _Nonnull cardNumberMaskExpression;
+@property (nonatomic, copy) IBInspectable NSString * _Nonnull cardNumberMaskTemplate;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+@end
+
+
+@class WKWebViewConfiguration;
 
 SWIFT_CLASS("_TtC13ExpressPaySDK19SaleRedirectionView")
 @interface SaleRedirectionView : WKWebView
@@ -268,10 +347,43 @@ SWIFT_CLASS("_TtC13ExpressPaySDK19SaleRedirectionView")
 
 
 @class WKNavigationAction;
+@class WKNavigation;
 
 @interface SaleRedirectionView (SWIFT_EXTENSION(ExpressPaySDK)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
+
+
+SWIFT_CLASS("_TtC13ExpressPaySDK24TextFieldInputController")
+@interface TextFieldInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC13ExpressPaySDK29TextFieldStartInputController")
+@interface TextFieldStartInputController : NSObject <UITextFieldDelegate>
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextView;
+
+SWIFT_CLASS("_TtC13ExpressPaySDK23TextViewInputController")
+@interface TextViewInputController : NSObject <UITextViewDelegate>
+- (BOOL)textView:(UITextView * _Nonnull)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString * _Nonnull)text SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+
 
 #endif
 #if defined(__cplusplus)

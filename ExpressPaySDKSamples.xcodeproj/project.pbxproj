@@ -39,6 +39,7 @@
 		3044D7982982727600F81550 /* ExpressPayRedirect3dsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D77B2982727600F81550 /* ExpressPayRedirect3dsVC.swift */; };
 		3077EA392975324600608D44 /* ExpressPaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3077EA37297531E500608D44 /* ExpressPaySDK.framework */; };
 		3077EA3A2975324600608D44 /* ExpressPaySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3077EA37297531E500608D44 /* ExpressPaySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30783A322990F8930089D34E /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783A312990F8930089D34E /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +90,7 @@
 		3044D77A2982727600F81550 /* ExpressPayGetTransDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpressPayGetTransDetails.storyboard; sourceTree = "<group>"; };
 		3044D77B2982727600F81550 /* ExpressPayRedirect3dsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayRedirect3dsVC.swift; sourceTree = "<group>"; };
 		3077EA37297531E500608D44 /* ExpressPaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ExpressPaySDK.framework; sourceTree = "<group>"; };
+		30783A312990F8930089D34E /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				1197846525F91A2C00DB4EC7 /* Assets.xcassets */,
 				1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */,
 				1197846A25F91A2C00DB4EC7 /* Info.plist */,
+				30783A312990F8930089D34E /* Credentials.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				3044D7822982727600F81550 /* ExpressPayRadioButton.swift in Sources */,
 				3044D7872982727600F81550 /* ExpressPayCaptureVC.swift in Sources */,
 				3044D78E2982727600F81550 /* ExpressPayChooserVC.swift in Sources */,
+				30783A322990F8930089D34E /* Credentials.swift in Sources */,
 				3044D7932982727600F81550 /* MainVC.swift in Sources */,
 				3044D7842982727600F81550 /* ApplePayInitiater.swift in Sources */,
 				3044D7982982727600F81550 /* ExpressPayRedirect3dsVC.swift in Sources */,

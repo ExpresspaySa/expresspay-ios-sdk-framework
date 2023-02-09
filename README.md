@@ -33,7 +33,7 @@ or
 
 Add ExpressPaySDK.framework by drag and drop the file to your project
 [Download ExpressPaySDK.framework](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/tree/main/ExpressPaySDK.framework)
-<a href="data:application/octet-stream,DATA" download="Download Framework">https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/tree/main/ExpressPaySDK.framework</a>
+<a href="data:application/octet-stream,DATA" download="https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/tree/main/ExpressPaySDK.framework">Download Framework</a>
 
 
 Also, it is possible to download the latest artifact from the [releases page](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/releases).

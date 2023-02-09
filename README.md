@@ -22,13 +22,19 @@ To get used to the SDK, download a [sample app](https://github.com/ExpresspaySa/
 
 ## Setup
 
-Installing as a pod dependency add to `Podfile`:
+Installing as a pod dependency
 
+Add below to `Podfile`:
 ```
-pod 'ExpressPaySDK' # Note: Currently adding ExpressPaySDK as pod dependency is not available)
+pod 'ExpressPaySDK' # Note: Currently adding ExpressPaySDK as pod dependency is not available.
 ```
 
-Latest version is: ![](https://cocoapod-badges.herokuapp.com/v/ExpressPaySDK/badge.png) 
+or
+
+Add ExpressPaySDK.framework by drag and drop the file to your project
+[Download ExpressPaySDK.framework](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/tree/main/ExpressPaySDK.framework)
+<a href="data:application/octet-stream,DATA" download="Download Framework">https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/tree/main/ExpressPaySDK.framework</a>
+
 
 Also, it is possible to download the latest artifact from the [releases page](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/releases).
 

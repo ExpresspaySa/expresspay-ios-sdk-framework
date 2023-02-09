@@ -22,10 +22,10 @@ To get used to the SDK, download a [sample app](https://github.com/ExpresspaySa/
 
 ## Setup
 
-Add to the `Podfile`:
+Installing as a pod dependency add to `Podfile`:
 
 ```
-pod 'ExpressPaySDK' #Note: Currently adding ExpressPaySDK as pod dependency is not available)
+pod 'ExpressPaySDK' # Note: Currently adding ExpressPaySDK as pod dependency is not available)
 ```
 
 Latest version is: ![](https://cocoapod-badges.herokuapp.com/v/ExpressPaySDK/badge.png) 

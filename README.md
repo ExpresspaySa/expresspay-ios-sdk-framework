@@ -38,6 +38,9 @@ Make sure to select `Embed & Sign` at Frameworks Section in project target gener
 
 Also, it is possible to download the latest artifact from the [releases page](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/releases).
 
+## Quick Payment Implementation
+![Card Payment](/wiki/Express-Quick-Card-Payment) | ![ApplePay Payment](/wiki/Express-Quick-Card-Payment)
+
 ## Sample
 
 | Sale | Recurring Sale | Capture |

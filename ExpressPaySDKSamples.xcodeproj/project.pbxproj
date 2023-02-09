@@ -11,6 +11,7 @@
 		1197846625F91A2C00DB4EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1197846525F91A2C00DB4EC7 /* Assets.xcassets */; };
 		1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */; };
 		119784E125F95FB000DB4EC7 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 119784E025F95FB000DB4EC7 /* Fakery */; };
+		3028B22A2994E56B00FEAE21 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3028B2292994E56B00FEAE21 /* README.md */; };
 		3044D77C2982727600F81550 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7522982727500F81550 /* Helpers.swift */; };
 		3044D77D2982727600F81550 /* ExpressPayTransactionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7532982727500F81550 /* ExpressPayTransactionStorage.swift */; };
 		3044D77F2982727600F81550 /* ExpressPayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3044D7572982727600F81550 /* ExpressPayButton.swift */; };
@@ -62,6 +63,7 @@
 		1197846525F91A2C00DB4EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1197846825F91A2C00DB4EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1197846A25F91A2C00DB4EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3028B2292994E56B00FEAE21 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3044D74C2982708B00F81550 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sample.entitlements; sourceTree = "<group>"; };
 		3044D7522982727500F81550 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		3044D7532982727500F81550 /* ExpressPayTransactionStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressPayTransactionStorage.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		11C1231A25D4734A002B42B3 = {
 			isa = PBXGroup;
 			children = (
+				3028B2292994E56B00FEAE21 /* README.md */,
 				1197845B25F91A2A00DB4EC7 /* Sample */,
 				11C1232525D4734A002B42B3 /* Products */,
 				1197847025F91A3F00DB4EC7 /* Frameworks */,
@@ -344,6 +347,7 @@
 				3044D78C2982727600F81550 /* ExpressPayGetTransStatus.storyboard in Resources */,
 				3044D7832982727600F81550 /* ApplePayinitiater.xib in Resources */,
 				3044D7862982727600F81550 /* ExpressPaySale.storyboard in Resources */,
+				3028B22A2994E56B00FEAE21 /* README.md in Resources */,
 				3044D78A2982727600F81550 /* ExpressPayCreditvoid.storyboard in Resources */,
 				1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */,
 				3044D7922982727600F81550 /* Main.storyboard in Resources */,

@@ -1,4 +1,4 @@
-[View SDK Wiki](https://github.com/ExpresspaySa/expressPay-ios-sdk/wiki) | [Report new issue](https://github.com/ExpresspaySa/expressPay-ios-sdk/issues/new)
+[View SDK Wiki](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/wiki) | [Report new issue](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/issues/new)
 
 # ExpressPay iOS SDK
 
@@ -37,6 +37,13 @@ Make sure to select `Embed & Sign` at Frameworks Section in project target gener
 
 
 Also, it is possible to download the latest artifact from the [releases page](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/releases).
+
+## Quick Payment Implementation
+[**Card Payment**](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/wiki/Express-Quick-Card-Payment)
+Start the card payment with one click, easy and short line of codes. It will help the developer to easily implement the payment using card in thier application. click the [link](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/wiki/Express-Quick-Card-Payment) for easy steps to start payments.
+
+[**ApplePay Payment**](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/wiki/Express-Quick-Card-Payment)
+Start the ApplePay payment with one click, easy and short line of codes. It will help the developer to easily implement the payment using ApplePay in thier application. click the [link](https://github.com/ExpresspaySa/expresspay-ios-sdk-framework/wiki/Express-ApplePay-Payment) for easy steps to start payments with ApplePay.
 
 ## Sample
 

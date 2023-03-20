@@ -10,15 +10,15 @@
 		</data>
 		<key>CardDetailViewController.nib</key>
 		<data>
-		SkWqjOAORaIKrqf80tHN1I7KPN8=
+		TJud4bNuIrXZDqwskfeImBfBLwI=
 		</data>
 		<key>Headers/ExpressPaySDK-Swift.h</key>
 		<data>
-		aqHAbeq3XJpXkQW0AZnqFURaUe0=
+		QdoZvLBKs9rqzOEF2X64TBld1t4=
 		</data>
 		<key>Headers/ExpressPaySDK.h</key>
 		<data>
-		rjAealZCsqABtNBfhFk8FFpCZB0=
+		3kX+1gwlLDFzbOYUfYQhBgRzswU=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FhnC/9g4JlovqFITTkfI76iZozY=
+		YOclAGY7AgfgmzOKJw7T7bP12PE=
 		</data>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		d6c8XMuqRQM9wLQVrr573VihkkE=
+		66pKalBP4YYcWybObOS8x8Lqst8=
 		</data>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		hSeLroHsLpQlRt/BOiWmeiekxnE=
+		0Jf6tTH1xA1iI9LT1ErpJsi6wy0=
 		</data>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		d6c8XMuqRQM9wLQVrr573VihkkE=
+		66pKalBP4YYcWybObOS8x8Lqst8=
 		</data>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		s6ErhzJ7s2VfMbdS8zmF/sKfsuw=
+		XEnvHwB/NYEY3GyufdJhsFPeSkA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,56 +62,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IfFdRYsI+ND6SlBAO44ZaVD4C6ZwYrcFJ2C0MPsQp90=
+			z8AUP789hCerNc58dOKkbMpGZyeVCasqPnNXSlQFqzY=
 			</data>
 		</dict>
 		<key>Headers/ExpressPaySDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			D+r3RH9BYsYaTHi/tZI1JfGKLFAgMKwRnKl+lQwm7FY=
+			msFA3DhBIesj+OsKonK2MlVQj7Ycp7eRW2dtxmV00w0=
 			</data>
 		</dict>
 		<key>Headers/ExpressPaySDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VpKqp/zLfhKCb6Zz5MrfbAAUmswa1YIHC0NlHqUwk1E=
+			oH7yTn8gu1xhXeWxWpcAOttPv2Q7ET8KzWTdOn9LcG4=
 			</data>
 		</dict>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fwvQ//jh/Lt4O9gLM4tOmCesceDKr8PIf+2ztJvil04=
+			XA/pD12Wb5jAd0aiNRHcmm7Q1aFLyXo1MB8fJkJVyC8=
 			</data>
 		</dict>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5pkeIxrkrJdOmEKxVIslDq0BFksDWBxN/XQ7uXaNLqg=
+			Dks5K26tNXjtoAVKzS6mR09gJNZbQlAoR8JTltly+K8=
 			</data>
 		</dict>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lRzJ8G0n/6iv9tRSzAycJcwH4oRbtIgdfLVDl8y9WuI=
+			uvSFNR0IHEkzVXdT8XvTDEmJ9dw8dEl3UjucsT63Bsg=
 			</data>
 		</dict>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5pkeIxrkrJdOmEKxVIslDq0BFksDWBxN/XQ7uXaNLqg=
+			Dks5K26tNXjtoAVKzS6mR09gJNZbQlAoR8JTltly+K8=
 			</data>
 		</dict>
 		<key>Modules/ExpressPaySDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VXMxgZc7QcRcPZtlaCO2i5YkRxgGqDhCaxoCaCCmvao=
+			3QNcc2UTohZ+6U0f3AAmC4JtZfmf2p7UzkQauOZckeE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

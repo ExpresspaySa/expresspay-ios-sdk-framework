@@ -15,7 +15,8 @@ public struct ExpressPayExactError : Swift.Error {
   public let code: Swift.Int
   public let message: Swift.String
 }
-extension ExpressPaySDK.ExpressPayExactError : Swift.Decodable {
+extension ExpressPaySDK.ExpressPayExactError : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class ExpressPayGetTransactionStatusAdapter : ExpressPaySDK.ExpressPayBaseAdapter<ExpressPaySDK.ExpressPayGetTransactionStatusService> {
@@ -36,8 +37,9 @@ public struct ExpressPaySaleSuccess : ExpressPaySDK.DetailsExpressPayResultProto
   public let orderAmount: Swift.Double
   public let orderCurrency: Swift.String
 }
-extension ExpressPaySDK.ExpressPaySaleSuccess : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleSuccess : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public enum ExpressPayStatus : Swift.String, Swift.Codable {
   case secure3D
@@ -121,7 +123,7 @@ public typealias TransactionCallback = ((ExpressPaySDK.ExpressPayResponse<Expres
 public typealias ErrorCallback = (([Swift.String]) -> Swift.Void)
 public class ExpressCardPay {
   public init()
-  public class func viewController(target: UIKit.UIViewController, payer: ExpressPaySDK.ExpressPayPayer, order: ExpressPaySDK.ExpressPaySaleOrder, transactionSuccess: @escaping ExpressPaySDK.TransactionCallback, transactionFailure: @escaping ExpressPaySDK.TransactionCallback, onError: @escaping ((Any) -> Swift.Void), onPresent: (() -> Swift.Void)?) -> UIKit.UIViewController
+  public class func viewController(target: UIKit.UIViewController, payer: ExpressPaySDK.ExpressPayPayer, order: ExpressPaySDK.ExpressPaySaleOrder, transactionSuccess: @escaping ExpressPaySDK.TransactionCallback, transactionFailure: @escaping ExpressPaySDK.TransactionCallback, onError: @escaping ExpressPaySDK.ErrorCallback, onPresent: (() -> Swift.Void)?) -> UIKit.UIViewController
   @objc deinit
 }
 extension ExpressPaySDK.ExpressCardPay {
@@ -143,8 +145,9 @@ public func ExpressPayPublicIP(completion: @escaping (Swift.String?, Swift.Error
 public struct ExpressPaySaleRedirectBody {
   public let body: Swift.String?
 }
-extension ExpressPaySDK.ExpressPaySaleRedirectBody : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleRedirectBody : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct ExpressPayTransaction {
   public let date: Foundation.Date
@@ -152,8 +155,9 @@ public struct ExpressPayTransaction {
   public let status: ExpressPaySDK.ExpressPayTransactionStatus
   public let amount: Swift.Double
 }
-extension ExpressPaySDK.ExpressPayTransaction : Swift.Decodable {
+extension ExpressPaySDK.ExpressPayTransaction : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct ExpressPaySaleDecline : ExpressPaySDK.DetailsExpressPayResultProtocol {
   public let transactionDate: Foundation.Date
@@ -167,16 +171,18 @@ public struct ExpressPaySaleDecline : ExpressPaySDK.DetailsExpressPayResultProto
   public let transactionId: Swift.String
   public let declineReason: Swift.String
 }
-extension ExpressPaySDK.ExpressPaySaleDecline : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleDecline : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct ExpressPaySaleRedirectParams {
   public let paymentRequisites: Swift.String
   public let md: Swift.String?
   public let termUrl: Swift.String
 }
-extension ExpressPaySDK.ExpressPaySaleRedirectParams : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleRedirectParams : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public protocol TextInputFormatter {
   func formatInput(currentText: Swift.String, range: Foundation.NSRange, replacementString text: Swift.String) -> ExpressPaySDK.FormattedTextValue
@@ -210,8 +216,9 @@ public struct ExpressPay3dsResponse {
   public let result: ExpressPaySDK.Result?
   public let gatewayRecommendation: ExpressPaySDK.GatewayRecommendation?
 }
-extension ExpressPaySDK.ExpressPay3dsResponse : Swift.Decodable {
+extension ExpressPaySDK.ExpressPay3dsResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public enum Result : Swift.String, Swift.Codable {
   case success
@@ -245,7 +252,7 @@ public struct ExpressPayCaptureSuccess : ExpressPaySDK.DetailsExpressPayResultPr
 extension ExpressPaySDK.ExpressPayCaptureSuccess : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ExpressPayTransactionStatus : Swift.String, Swift.Decodable {
+public enum ExpressPayTransactionStatus : Swift.String, Swift.Codable {
   case fail
   case success
   public init?(rawValue: Swift.String)
@@ -259,8 +266,10 @@ public enum ExpressPayTransactionStatus : Swift.String, Swift.Decodable {
   @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @objc deinit
 }
+public var ENABLE_DEBUG: Swift.Bool
 @_hasMissingDesignatedInitializers final public class ExpressPaySDK {
   public static func config(_ credendials: ExpressPaySDK.ExpressPayCredential)
+  public static func enableLogs()
   @objc deinit
 }
 public class CreditCardValidator {
@@ -368,7 +377,8 @@ public struct ExpressPayError : Swift.Error {
     get
   }
 }
-extension ExpressPaySDK.ExpressPayError : Swift.Decodable {
+extension ExpressPaySDK.ExpressPayError : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 open class PlaceholderTextFormatter : ExpressPaySDK.TextFormatter, ExpressPaySDK.TextUnformatter {
@@ -623,8 +633,9 @@ public struct ExpressPaySaleRecurring : ExpressPaySDK.DetailsExpressPayResultPro
   public let orderAmount: Swift.Double
   public let orderCurrency: Swift.String
 }
-extension ExpressPaySDK.ExpressPaySaleRecurring : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleRecurring : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 open class PlaceholderTextInputFormatter : ExpressPaySDK.TextInputFormatter, ExpressPaySDK.TextFormatter, ExpressPaySDK.TextUnformatter, ExpressPaySDK.CaretPositioner {
   public init(textPattern: Swift.String, patternSymbol: Swift.Character = "#")
@@ -648,7 +659,8 @@ public struct ExpressPayGetTransactionStatusSuccess : ExpressPaySDK.ExpressPayRe
   public let orderId: Swift.String
   public let transactionId: Swift.String
 }
-extension ExpressPaySDK.ExpressPayGetTransactionStatusSuccess : Swift.Decodable {
+extension ExpressPaySDK.ExpressPayGetTransactionStatusSuccess : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 open class SumTextInputFormatter : ExpressPaySDK.TextInputFormatter, ExpressPaySDK.TextFormatter, ExpressPaySDK.TextUnformatter, ExpressPaySDK.TextNumberFormatter, ExpressPaySDK.TextNumberUnformatter, ExpressPaySDK.CaretPositioner {
@@ -715,8 +727,9 @@ public struct ExpressPaySale3ds : ExpressPaySDK.DetailsExpressPayResultProtocol 
   public let redirectParams: ExpressPaySDK.ExpressPaySaleRedirectParams
   public let redirectMethod: ExpressPaySDK.ExpressPayRedirectMethod
 }
-extension ExpressPaySDK.ExpressPaySale3ds : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySale3ds : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public func == (lhs: ExpressPaySDK.CreditCardValidationType, rhs: ExpressPaySDK.CreditCardValidationType) -> Swift.Bool
 public struct CreditCardValidationType : Swift.Equatable {
@@ -739,8 +752,14 @@ public struct ExpressPaySaleRedirect : ExpressPaySDK.DetailsExpressPayResultProt
   public let redirectMethod: ExpressPaySDK.ExpressPayRedirectMethod
   public func validation() -> Swift.Bool
 }
-extension ExpressPaySDK.ExpressPaySaleRedirect : Swift.Decodable {
+extension ExpressPaySDK.ExpressPaySaleRedirect : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Test {
+  public let orderId: Swift.String
+  public let transactionId: Swift.String
+  public let transactionDate: Foundation.Date
 }
 public protocol TextNumberUnformatter {
   func unformatNumber(_ formattedText: Swift.String?) -> Foundation.NSNumber?
@@ -787,7 +806,7 @@ public enum ExpressPayCaptureResult : Swift.Decodable {
   }
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ExpressPayRedirectMethod : Swift.String, Swift.Decodable {
+public enum ExpressPayRedirectMethod : Swift.String, Swift.Codable {
   case get
   case post
   public init?(rawValue: Swift.String)
@@ -836,10 +855,11 @@ extension ExpressPaySDK.ExpressPayCaptureService : Swift.Encodable {
 }
 public struct ExpressPayGetTransactionDetailsSuccess : ExpressPaySDK.OrderExpressPayResultProtocol {
   public let action: ExpressPaySDK.ExpressPayAction
-  public let result: ExpressPaySDK.ExpressPayResult
-  public let status: ExpressPaySDK.ExpressPayStatus
+  public var result: ExpressPaySDK.ExpressPayResult
+  public var status: ExpressPaySDK.ExpressPayStatus
   public let orderId: Swift.String
   public let transactionId: Swift.String
+  public let declineReason: Swift.String?
   public let name: Swift.String
   public let mail: Swift.String
   public let ip: Swift.String
@@ -848,8 +868,9 @@ public struct ExpressPayGetTransactionDetailsSuccess : ExpressPaySDK.OrderExpres
   public let card: Swift.String
   public let transactions: [ExpressPaySDK.ExpressPayTransaction]
 }
-extension ExpressPaySDK.ExpressPayGetTransactionDetailsSuccess : Swift.Decodable {
+extension ExpressPaySDK.ExpressPayGetTransactionDetailsSuccess : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct ExpressPaySaleService {
 }
